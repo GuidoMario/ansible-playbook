@@ -6,6 +6,6 @@
   tasks:
     - name: Copy text file to remote host
       copy:
-        src: /path/to/your/local/file.txt  # Gantilah dengan jalur file teks lokal
-        dest: /path/on/remote/host/file.txt  # Gantilah dengan jalur tujuan di host target
+        src: /home/guido/awx-operator/playbooks/test.txt  # Gantilah dengan jalur file teks lokal
+        dest: /root/Documents # Gantilah dengan jalur tujuan di host target
       become: true
