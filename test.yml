@@ -1,0 +1,11 @@
+---
+- name: Copy Text File to Remote Host
+  hosts: all  # Gantilah dengan nama atau alamat IP host yang dituju
+  become: true  # Menggunakan hak administratif (sudo)
+
+  tasks:
+    - name: Copy text file to remote host
+      copy:
+        src: /path/to/your/local/file.txt  # Gantilah dengan jalur file teks lokal
+        dest: /path/on/remote/host/file.txt  # Gantilah dengan jalur tujuan di host target
+      become: true
