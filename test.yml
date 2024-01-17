@@ -1,6 +1,6 @@
 ---
 - name: Copy Text File to Remote Host
-  hosts: test-igrmm  # Gantilah dengan nama atau alamat IP host yang dituju
+  hosts: 172.31.16.37  # Gantilah dengan nama atau alamat IP host yang dituju
   become: true  # Menggunakan hak administratif (sudo)
 
   tasks:
