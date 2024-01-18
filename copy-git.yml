@@ -6,5 +6,5 @@
   tasks:
     - name: Download file from GitHub
       get_url:
-        url: /test.txt
+        url: https://github.com/GuidoMario/ansible-playbook.git/test.txt
         dest: /root/Documents
