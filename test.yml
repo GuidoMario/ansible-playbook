@@ -7,5 +7,5 @@
   tasks:
   - name: Copy text file to remote host
     copy:
-      src: /var/lib/awx/projects
+      src: /var/lib/awx/projects/my_ansible_project/files/test.txt
       dest: /root/Documents
