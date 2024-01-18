@@ -9,3 +9,4 @@
       copy:
         src: /home/guido/test.txt  
         dest: /root/Documents
+...
