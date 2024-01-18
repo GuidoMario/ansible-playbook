@@ -7,8 +7,8 @@
   tasks:
     - name: Clone GitHub repository
       git:
-        repo: https://github.com/GuidoMario/ansible-playbook.git/test.txt
-        dest: /home/guido/awx-operator
+        repo: https://github.com/GuidoMario/ansible-playbook.git
+        dest: /home/guido/awx-operator/test.txt
 
     - name: Copy file from cloned repository to target
       copy:
