@@ -4,7 +4,12 @@
   gather_facts: true  # Mengumpulkan fakta tentang host
 
   tasks:
-    - name: Download file from GitHub
-      get_url:
-        url: https://github.com/GuidoMario/ansible-playbook.git/test.txt
-        dest: /root/Documents
+    - name: Clone GitHub repository
+      git:
+        repo: 
+        dest: /tmp/my_git_repo  # Ganti dengan direktori tempat repositori akan diambil
+
+    - name: Copy file from cloned repository to target
+      copy:
+        src: /tmp/my_git_repo/path/to/your_file.txt  # Ganti dengan path relatif dari repositori yang telah diambil
+        dest: /path/on/target/host/your_file.txt  # Ganti dengan path tujuan di host target
