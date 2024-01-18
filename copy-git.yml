@@ -6,10 +6,10 @@
   tasks:
     - name: Clone GitHub repository
       git:
-        repo: 
-        dest: /tmp/my_git_repo  # Ganti dengan direktori tempat repositori akan diambil
+        repo: https://github.com/GuidoMario/ansible-playbook.git/test.txt
+        dest: /home/guido/awx-operator
 
     - name: Copy file from cloned repository to target
       copy:
-        src: /tmp/my_git_repo/path/to/your_file.txt  # Ganti dengan path relatif dari repositori yang telah diambil
-        dest: /path/on/target/host/your_file.txt  # Ganti dengan path tujuan di host target
+        src: /home/guido/awx-operator/test.txt  # Ganti dengan path relatif dari repositori yang telah diambil
+        dest: /root/Documents  # Ganti dengan path tujuan di host target
