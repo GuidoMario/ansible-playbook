@@ -2,6 +2,7 @@
 - name: Copy file from GitHub without cloning
   hosts: 172.31.16.67
   gather_facts: true  # Mengumpulkan fakta tentang host
+  become: yes
 
   tasks:
     - name: Clone GitHub repository
