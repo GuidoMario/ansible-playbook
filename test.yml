@@ -8,3 +8,4 @@
       copy:
         src: /home/guido/awx-operator/playbooks/test.txt  
         dest: /root/Documents
+      remote_src: true
