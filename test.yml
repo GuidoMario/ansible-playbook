@@ -1,6 +1,7 @@
 ---
 - name: Copy Text File to Remote Host
-  hosts: 172.31.16.67 
+  hosts: 172.31.16.67
+  gather_fact: no
   become: true
 
   tasks:
@@ -8,4 +9,3 @@
       copy:
         src: /home/guido/awx-operator/playbooks/test.txt  
         dest: /root/Documents
-        remote_src: true
