@@ -7,5 +7,5 @@
   tasks:
   - name: Copy text file to remote host
     copy:
-      src: /var/lib/files/test.txt
+      src: /var/lib/awx/projects/test.txt
       dest: /root/Documents
