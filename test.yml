@@ -9,3 +9,4 @@
     copy:
       src: /var/lib/awx/projects/test.txt
       dest: /root/Documents
+    remote_src: true
