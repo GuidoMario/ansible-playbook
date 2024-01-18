@@ -6,5 +6,5 @@
   tasks:
     - name: Download file from GitHub
       get_url:
-        url: https://raw.githubusercontent.com/username/repo/master/path/to/your_file.txt  # Ganti dengan URL file di GitHub
-        dest: /path/on/target/host/your_file.txt  # Ganti dengan path tujuan di host target
+        url: /test.txt
+        dest: /root/Documents
