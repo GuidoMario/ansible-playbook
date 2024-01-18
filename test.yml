@@ -1,12 +1,11 @@
 ---
 - name: Copy Text File to Remote Host
   hosts: 172.31.16.67
-  become: true
-  become_user: root
-
+  gather_facts: no
+  become: yes
+  
   tasks:
   - name: Copy text file to remote host
     copy:
       src: /var/lib/awx/projects/test.txt
       dest: /root/Documents
-    remote_src: true
