@@ -1,0 +1,11 @@
+---
+- name: Copy Text File to Remote Host
+  hosts: 172.31.16.67
+  gather_facts: no
+  become: true
+
+  tasks:
+  - name: Create a file
+    file:
+      path: /root/Documents/hallo
+      state: touch
