@@ -6,6 +6,6 @@
   tasks:
     - name: Copy text file to remote host
       copy:
-        src: /home/guido/test.txt  
+        src: /home/guido/awx-operator/playbooks/test.txt  
         dest: /root/Documents
 ...
