@@ -1,7 +1,7 @@
 ---
 - name: Copy Text File to Remote Host
   hosts: 172.31.16.67
-  gather_fact: no
+  gather_facts: no
   become: true
 
   tasks:
