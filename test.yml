@@ -1,11 +1,11 @@
 ---
 - name: Copy Text File to Remote Host
-  hosts: Host  # Gantilah dengan nama atau alamat IP host yang dituju
-  become: true  # Menggunakan hak administratif (sudo)
+  hosts: 172.31.16.67 
+  gather_facts: no
+  become: yes
 
   tasks:
     - name: Copy text file to remote host
       copy:
-        src: /home/guido/awx-operator/playbooks/test.txt  # Gantilah dengan jalur file teks lokal
-        dest: /root/Documents # Gantilah dengan jalur tujuan di host target
-      become: true
+        src: /home/guido/test.txt  
+        dest: /root/Documents
