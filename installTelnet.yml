@@ -1,0 +1,10 @@
+---
+- name: Install Telnet
+  hosts: 172.31.16.67
+  become: yes  # Run tasks with elevated privileges (sudo)
+
+  tasks:
+    - name: Install Telnet package
+      yum:
+        name: telnet
+        state: present
