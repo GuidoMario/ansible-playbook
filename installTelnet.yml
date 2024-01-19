@@ -5,4 +5,4 @@
 
   tasks:
   - name: Install telnet RPM package
-    command: rpm -ivh /home/telnet-0.17-64.el7.x86_64.rpm
+    command: rpm -ivh /root/telnet-0.17-64.el7.x86_64.rpm
