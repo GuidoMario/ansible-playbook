@@ -1,10 +1,8 @@
 ---
 - name: Install Telnet
   hosts: 172.31.16.67
-  become: yes  # Run tasks with elevated privileges (sudo)
+  become: yes
 
   tasks:
-  - name: Install Telnet package
-    yum:
-      name: telnet
-      state: present
+  - name: Install telnet RPM package
+    command: rpm -ivh /home/telnet-0.17-64.el7.x86_64.rpm
