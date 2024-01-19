@@ -4,7 +4,7 @@
   become: yes  # Run tasks with elevated privileges (sudo)
 
   tasks:
-    - name: Install Telnet package
-      yum:
-        name: telnet
-        state: present
+  - name: Install Telnet package
+    yum:
+      name: telnet
+      state: present
